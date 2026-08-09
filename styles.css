@@ -310,10 +310,11 @@ code { font-family: var(--font-mono); }
 .pass { color: #3FBE81; }
 .line-pass { display: inline-block; opacity: 0; animation: reveal-line 0.4s ease forwards; }
 .line-pass:nth-of-type(1) { animation-delay: 0.15s; }
-.line-pass:nth-of-type(2) { animation-delay: 0.38s; }
-.line-pass:nth-of-type(3) { animation-delay: 0.61s; }
-.line-pass:nth-of-type(4) { animation-delay: 0.84s; }
-.line-pass:nth-of-type(5) { animation-delay: 1.07s; }
+.line-pass:nth-of-type(2) { animation-delay: 0.36s; }
+.line-pass:nth-of-type(3) { animation-delay: 0.57s; }
+.line-pass:nth-of-type(4) { animation-delay: 0.78s; }
+.line-pass:nth-of-type(5) { animation-delay: 0.99s; }
+.line-pass:nth-of-type(6) { animation-delay: 1.20s; }
 @keyframes reveal-line {
   from { opacity: 0; transform: translateY(3px); }
   to { opacity: 1; transform: translateY(0); }
@@ -324,7 +325,7 @@ code { font-family: var(--font-mono); }
   color: var(--terminal-ink);
   opacity: 0;
   animation: reveal-line 0.4s ease forwards;
-  animation-delay: 1.3s;
+  animation-delay: 1.42s;
 }
 .caret {
   display: inline-block;
