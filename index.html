@@ -86,9 +86,9 @@
           <p class="section-eyebrow">Side project · built solo · shipped this week</p>
           <h2 class="section-title">Smart Test Suite</h2>
           <p class="featured-lede">
-            Point it at a URL. It crawls the site, writes a TypeScript Playwright suite grounded in
-            selectors it actually measured, runs it, and shows you the report — no invented locators,
-            no flaky waits papering over races.
+            Writing a test suite for a new site normally takes a QA team days. This tool does it in one
+            run: point it at a URL and it crawls the site, decides what's worth testing, and hands back a
+            working, reliable Playwright suite — plus a bug report — with no manual scripting.
           </p>
           <div class="featured-actions">
             <a href="https://github.com/bhanuteja-qae/smart-test-suite" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub ↗</a>
@@ -113,10 +113,10 @@
         <p class="pipeline-caption"><span class="llm-dot" aria-hidden="true"></span> calls an LLM · plain stages are deterministic. Each stage is a resumable child process with its own artifact on disk.</p>
 
         <ul class="assertions featured-assertions">
-          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">Every selector the generator can use was <strong>measured during the crawl</strong> and proven to resolve to exactly one element — the LLM decides what to test, never how to address the DOM.</span></li>
-          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">Generated specs are <strong>validated after generation</strong>: any <code>page.locator()</code>, XPath, or <code>waitForTimeout</code> is rejected, regenerated once, then dropped into a <code>skipped</code> block rather than silently disappearing.</span></li>
-          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">A <strong>deterministic health check</strong> — no LLM involved — catches console errors, broken images, duplicate DOM ids, and real text collisions measured from actual glyph rectangles, across every crawled page.</span></li>
-          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">Regeneration respects <code>@generated-start</code> / <code>@generated-end</code> markers, so hand edits to generated specs survive being regenerated.</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">Cuts the slowest part of QA ramp-up — instead of a person hand-writing a test suite for a new site, this generates one automatically, <strong>grounded in the real page</strong> so it doesn't break the moment the AI gets creative.</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">Finds real bugs without anyone writing assertions for them: <strong>broken images, console errors, and visual overlaps</strong>, caught automatically across every page it crawls.</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">Built to be trusted, not just demoed — generated code is <strong>checked and rejected if it cuts corners</strong>, and hand edits survive the next regeneration instead of getting silently overwritten.</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text"><strong>Production-minded from day one:</strong> ships in Docker, resumable mid-run, and safe by default — nothing gets submitted on a real site unless explicitly turned on.</span></li>
         </ul>
 
         <ul class="tags featured-tags">
