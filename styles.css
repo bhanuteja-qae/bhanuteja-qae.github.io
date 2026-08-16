@@ -339,6 +339,80 @@ code { font-family: var(--font-mono); }
 }
 
 /* ============================================================
+   Featured build
+   ============================================================ */
+.featured-section {
+  padding: 8px 0 56px;
+}
+.featured-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--pass);
+  border-radius: 14px;
+  padding: 40px 44px 44px;
+  box-shadow: 0 24px 60px -32px rgba(31, 122, 77, 0.35);
+}
+@media (max-width: 640px) {
+  .featured-card { padding: 30px 22px 34px; }
+}
+.featured-head .section-eyebrow { color: var(--pass); }
+.featured-head .section-title { margin-bottom: 14px; }
+.featured-lede {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  max-width: 62ch;
+  margin: 0 0 24px;
+}
+.featured-actions { margin-bottom: 36px; }
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  background: var(--rule-soft);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.pipeline-stage {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  padding: 7px 13px;
+  border-radius: 6px;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  color: var(--ink-soft);
+}
+.pipeline-stage.llm {
+  border-color: var(--pass);
+  color: var(--pass);
+  background: var(--pass-soft);
+  font-weight: 600;
+}
+.pipeline-arrow {
+  color: var(--ink-soft);
+  opacity: 0.5;
+  font-size: 0.85rem;
+}
+.pipeline-caption {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin: 0 0 32px;
+}
+.llm-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pass);
+  margin-right: 4px;
+}
+.featured-assertions { margin-bottom: 28px; }
+.featured-tags { margin: 0; }
+
+/* ============================================================
    Summary / Gherkin strip
    ============================================================ */
 .summary-section {

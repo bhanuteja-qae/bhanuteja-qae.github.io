@@ -21,6 +21,7 @@
   <div class="wrap header-row">
     <a href="#top" class="brand">BHANU TEJA A</a>
     <nav class="site-nav" aria-label="Primary">
+      <a href="#featured">Build</a>
       <a href="#experience">Work</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -73,6 +74,54 @@
 <span class="cursor-line"><span class="prompt">$</span> <span class="caret">▌</span></span>
 
 <span class="summary">5 years · 2 companies · 6 passed, 0 failed</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED BUILD -->
+  <section class="featured-section" id="featured">
+    <div class="wrap">
+      <div class="featured-card">
+        <div class="featured-head">
+          <p class="section-eyebrow">Side project · built solo · shipped this week</p>
+          <h2 class="section-title">Smart Test Suite</h2>
+          <p class="featured-lede">
+            Point it at a URL. It crawls the site, writes a TypeScript Playwright suite grounded in
+            selectors it actually measured, runs it, and shows you the report — no invented locators,
+            no flaky waits papering over races.
+          </p>
+          <div class="featured-actions">
+            <a href="https://github.com/bhanuteja-qae/smart-test-suite" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="pipeline" role="img" aria-label="Pipeline: crawl, then LLM stages profile, plan, data, and generate, then test, then LLM vision review">
+          <span class="pipeline-stage">crawl</span>
+          <span class="pipeline-arrow" aria-hidden="true">→</span>
+          <span class="pipeline-stage llm">profile</span>
+          <span class="pipeline-arrow" aria-hidden="true">→</span>
+          <span class="pipeline-stage llm">plan</span>
+          <span class="pipeline-arrow" aria-hidden="true">→</span>
+          <span class="pipeline-stage llm">data</span>
+          <span class="pipeline-arrow" aria-hidden="true">→</span>
+          <span class="pipeline-stage llm">generate</span>
+          <span class="pipeline-arrow" aria-hidden="true">→</span>
+          <span class="pipeline-stage">test</span>
+          <span class="pipeline-arrow" aria-hidden="true">→</span>
+          <span class="pipeline-stage llm">vision</span>
+        </div>
+        <p class="pipeline-caption"><span class="llm-dot" aria-hidden="true"></span> calls an LLM · plain stages are deterministic. Each stage is a resumable child process with its own artifact on disk.</p>
+
+        <ul class="assertions featured-assertions">
+          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">Every selector the generator can use was <strong>measured during the crawl</strong> and proven to resolve to exactly one element — the LLM decides what to test, never how to address the DOM.</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">Generated specs are <strong>validated after generation</strong>: any <code>page.locator()</code>, XPath, or <code>waitForTimeout</code> is rejected, regenerated once, then dropped into a <code>skipped</code> block rather than silently disappearing.</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">A <strong>deterministic health check</strong> — no LLM involved — catches console errors, broken images, duplicate DOM ids, and real text collisions measured from actual glyph rectangles, across every crawled page.</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span class="assertion-text">Regeneration respects <code>@generated-start</code> / <code>@generated-end</code> markers, so hand edits to generated specs survive being regenerated.</span></li>
+        </ul>
+
+        <ul class="tags featured-tags">
+          <li>TypeScript</li><li>Playwright</li><li>Docker</li><li>Node.js</li><li>LLM orchestration</li><li>OpenAI-compatible APIs</li>
+        </ul>
       </div>
     </div>
   </section>
